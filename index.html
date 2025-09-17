@@ -32,20 +32,6 @@
         "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
       background: linear-gradient(135deg, #e0f2ff, #fdfbff, #e0f7fa);
       background-size: 400% 400%;
-      animation: gradientShift 20s ease infinite;
-    }
-
-    /* เอฟเฟกต์ background เลื่อนไล่สี */
-    @keyframes gradientShift {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
     }
 
     header {
@@ -100,38 +86,6 @@
       font-size: 15px;
     }
 
-    /* Dark mode */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background: linear-gradient(135deg, #0f172a, #1e293b, #0b1022);
-        background-size: 400% 400%;
-        animation: gradientShiftDark 25s ease infinite;
-        color: #e6e8ee;
-      }
-      .card {
-        background: rgba(17, 24, 39, 0.6);
-        border-color: rgba(255, 255, 255, 0.06);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
-      }
-      .brand .logo {
-        box-shadow: 0 8px 24px rgba(6, 182, 212, 0.2);
-      }
-      .hint {
-        color: #c7cbe0;
-      }
-    }
-
-    @keyframes gradientShiftDark {
-      0% {
-        background-position: 50% 0%;
-      }
-      50% {
-        background-position: 50% 100%;
-      }
-      100% {
-        background-position: 50% 0%;
-      }
-    }
   </style>
 </head>
 <body>
